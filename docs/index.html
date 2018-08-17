@@ -21,6 +21,7 @@
     <!-- CSS Files -->
     <link href="https://oscibla.github.io/daskoerperwerk/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://oscibla.github.io/daskoerperwerk/assets/css/now-ui-kit.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/js/magnific-popup/magnific-popup.css">
     <!-- Global site tag (gtag.js) - Google Analytics
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116374834-1"></script>
 <script>
@@ -238,48 +239,100 @@ window.cookieconsent.initialise({
       </div>
     </div>
   </div>
-  <!--<div class="section bg-gray">
-    <div class="container">
 
-      <div class="row">
-        <div class="col-lg-6">
-        <h4>Tätowierung</h4>
-        </div>
-        <div class="col-lg-6">
-        <h4>Laserbehandlung bei ohnetattoo.com</h4>
+  <style>
+
+.portfolio-box .portfolio-box-caption {
+position: absolute;
+bottom: 0;
+display: block;
+width: 100%;
+height: 100%;
+text-align: center;
+opacity: 0;
+color: #fff;
+background: rgba(0, 0, 0, 0.3);
+-webkit-transition: all 0.2s;
+-moz-transition: all 0.2s;
+transition: all 0.2s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+position: absolute;
+top: 50%;
+width: 100%;
+transform: translateY(-50%);
+text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+padding: 0 15px;
+font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+font-size: 14px;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+opacity: 1;
+}
+
+.portfolio-box:focus {
+outline: none;
+}
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+
+  </style>
+  <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-3 col-sm-6">
+            <a class="portfolio-box" href="assets/img/gallery/001.jpg">
+              <img class="img-fluid" src="assets/img/gallery/001.jpg" alt="">
+              <div class="portfolio-box-caption">
+                </div>
+              </div>
+            </a>
+          <div class="col-lg-3 col-sm-6">
+            <a class="portfolio-box" href="assets/img/gallery/002.jpg">
+              <img class="img-fluid" src="assets/img/gallery/002.jpg" alt="">
+              <div class="portfolio-box-caption">
+                </div>
+              </div>
+            </a>
+          <div class="col-lg-3 col-sm-6">
+            <a class="portfolio-box" href="assets/img/gallery/003.jpg">
+              <img class="img-fluid" src="assets/img/gallery/003.jpg" alt="">
+              <div class="portfolio-box-caption">
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <a class="portfolio-box" href="assets/img/gallery/004.jpg">
+                  <img class="img-fluid" src="assets/img/gallery/004.jpg" alt="">
+                  <div class="portfolio-box-caption">
+                    </div>
+                  </div>
+            </a>
+          </div>
         </div>
       </div>
-        <div class="row">
-        <div class="col-lg-2">
-          <img src="assets/img/taetowierung.png" alt="" class="img-round img-raised ">
-        </div>
-        <div class="col-lg-4">
-          <p>Mit Tätowiernadeln wird die Farbe in die Dermis eingebracht. Sogenannte Fresszellen versuchen die einzelnen Pigmentteilchen zu erfassen, was aufgrund der Größe nicht gelingt. </p>
-        </div>
-        <div class="col-lg-2">
-          <img src="assets/img/tattooentfernung.png" alt="" class="img-round img-raised">
-        </div>
-        <div class="col-lg-4">
-          <p>Die Farbpartikel zerfallen durch Hitzeeinwirkung und können anschließend über das Lymphsystem abtransportiert werden. Beim hautschonenden Laserverfahren wirken extrem kurze Impulse unter der Epidermis und lassen diese weitgehend unbeschadet. </p>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="section">
-      <div class="container">
-      <div class="row">
-      <div class="col-lg-6" >
-      <h4>Ablauf</h4>
-      <p>Je nach Aufhellungwunsch sind in der Regel mehrere Behandlungen notwendig. Aufgrund unserer Erfahrungswerte sind grobe Schätzungen möglich, mit welcher Anzahl an Behandlungen zu rechnen ist. In unserem kostenlosen Beratungsgespräch erfahren Sie hierzu näheres. </p>
-      </div>
-      <div class="col-lg-6">
-      <h4>Kosten</h4>
-      <p>Nach der Größe des Tattoos wird der jeweilige Preis pro Behandlung ermittelt, beginnend <b>ab 60€</b> für ein kleines Tattoo von max. 10cm². <br>
-      <i class="fa fa-file"></i> <a href="assets/doc/preisliste-ohnetattoo.pdf">Mehr Informationen</a> </p>
-    </div>
-  </div>
-</div>
-</div>-->
+  </section>
+
     <div class="section">
       <div class="container text-center">
         <h4>Sie möchten sich erst informieren?</h4>
@@ -399,4 +452,26 @@ window.cookieconsent.initialise({
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
 
+<script src="assets/js/magnific-popup/jquery.magnific-popup.js"></script>
+<script>
+$(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title');
+			}
+		}
+	});
+});
+</script>
 </html>
