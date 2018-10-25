@@ -1,5 +1,0 @@
-AllowOverride All
-AuthType Basic
-AuthName "Login"
-AuthUserFile ../.htpasswd
-Require valid-user
