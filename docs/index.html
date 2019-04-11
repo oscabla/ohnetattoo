@@ -60,59 +60,6 @@ window.cookieconsent.initialise({
 </script>
 -->
 </head>
-	<style>
-		.desktop-only {
-	 
-			display: block;
-		}
-		.mobile-only {
-	 
-			display: none;
-		}
-		@media screen and (max-width: 991px) {
-			.desktop-only {
-				display: none;
-			}
-			.mobile-only {
-	 
-			display: block;
-			}
-			.btn-action {
-				height: 3rem!important;
-				min-width: 3rem!important;
-			}
-			.btn-action-icon {
-				width: 3rem!important;
-			}
-		}
-		.action-buttons {
-			position: fixed;
-			z-index: 1;
-			margin: 20px;
-			right: 0;
-			bottom: 0;
-			align-self: flex-end;
-			float: right;
-		}
-		.btn-action {
-			float: left;
-			margin: 5px;
-			box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.2);
-		}
-		.nav-link {
-			text-transform: uppercase;
-			font-weight: 600;
-		}
-		.navbar-toggler-bar {
-			background-color: #5aa897!important;
-		}
-		.navbar-transparent .dropdown-item {
-			color: rgb(33, 37, 41)!important;
-		}
-		.navbar-nav {
-			font-size: 16px;
-		}
-	</style>
 
 <body class="landing-page sidebar-collapse">
     <!-- Navbar -->
@@ -129,14 +76,8 @@ window.cookieconsent.initialise({
             <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="assets/img/blurred-image-1.jpg">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="fa fa-home" ></i></a>
+                        <a class="nav-link site-active" href="#"><i class="fa fa-home" ></i></a>
                     </li>
-                    <!--<li class="nav-item">
-                        <a href="ueber" class="nav-link">Über</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="kontakt" class="nav-link">Kontakt</a>
-                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" href="tattooentfernung">
                             Tattooentfernung
@@ -177,7 +118,7 @@ window.cookieconsent.initialise({
 				<i class="fa fa-phone fa-2x" style="color: white!important;"></i>
 			</button>
 		</a>
-		<a href="https://api.whatsapp.com/send?phone=4933150588558">
+		<a href="https://api.whatsapp.com/send?phone=4933150588558" target="_blank">
 			<button class="btn btn-primary btn-icon btn-round btn-lg btn-action btn-action-icon mobile-only" data-toggle="tooltip" data-placement="top" title="Nachricht schreiben">
 				<i class="fa fa-whatsapp fa-2x" style="color: white!important;"></i>
 			</button>
@@ -421,7 +362,7 @@ window.cookieconsent.initialise({
       </div>
     </div>
 <!--Footer-->
-<div class="gfooter">
+<div class="gfooter" id="gfooter">
   <iframe src="gfooter.html"
   height="100%" width="100%" scrolling="no" ></iframe>
 </div>
