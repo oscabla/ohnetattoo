@@ -1,3 +1,0 @@
-grün #5AA897;
-hover #64B09F;
-grau #aeaeae;
